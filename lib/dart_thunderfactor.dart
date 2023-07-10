@@ -9,7 +9,7 @@ final String path = current.path;
 String pathToFiles = '$path\\';
 
 final Directory files = Directory(pathToFiles);
-final List<FileSystemEntity> filesInDirectory = files.listSync(recursive: true, followLinks: false);
+final List<FileSystemEntity> filesInDirectory = files.listSync(recursive: true, followLinks: true);
 void startThunderFactor() {
   print('ThunderFactor is starting...');
   print('Please, provide the path to the files: ');
